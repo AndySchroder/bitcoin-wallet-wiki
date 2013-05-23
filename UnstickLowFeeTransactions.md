@@ -1,13 +1,13 @@
 #summary How to unstick coins stuck in low-fee-transactions
 
-# Problem
+### Problem
 
 Transactions with no or low fees will not get relayed by most peers. As a consequence, they will never be confirmed without further action.
 
 On the other hand, coins spent in stuck transaction cannot be spent elsewhere. Those coins are stuck.
 
 
-# Solution
+### Solution
 
 You've got two options to resolve your problem:
   * Reset your blockchain and wait until it's up to date again (keep your device on power and connected to a reliable WLAN). After the rescan, stuck transactions should be gone and your BTC free to spend again.

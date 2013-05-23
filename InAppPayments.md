@@ -1,6 +1,6 @@
 #summary How to integrate in-app payments in your Android app.
 
-== Introduction ==
+## Introduction
 
 You might want to send Bitcoins from your app. A common example is a donation button.
 
@@ -15,7 +15,7 @@ Check out the code from the repository. There are two subprojects for in-app pay
 
 Have a look at the Javadoc for the class `BitcoinIntegration`.
 
-== Sending the request ==
+## Sending the request
 
 {{{
     class de.schildbach.wallet.integration.android.BitcoinIntegration
@@ -45,7 +45,7 @@ The above methods send an intent to any Bitcoin app which listens to it.
 
 The URL is formatted to [https://en.bitcoin.it/wiki/BIP_0021 BIP21 standard].
 
-== Retrieving the result ==
+## Retrieving the result
 
 Some apps return a result through onActivityResult() after the user has gone through the sending process. In this case you can read some useful extras:
 

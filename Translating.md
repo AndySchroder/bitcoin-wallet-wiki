@@ -30,7 +30,7 @@ Here is the list of (English) reference files to translate:
   * http://code.google.com/p/bitcoin-wallet/source/browse/market/market-description.txt
   * http://code.google.com/p/bitcoin-wallet/source/browse/market/market-promo-text.txt
 
-All translations are renamed using the following pattern, **{lc}** being the two-letter [http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes ISO 639-1] language code:
+All translations are renamed using the following pattern, **{lc}** being the two-letter [ISO 639-1](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code:
 
   * res/values-**{lc}**/strings.xml
   * assets/help`_`**{lc}**.html
@@ -54,4 +54,4 @@ In "strings.xml", can you keep in mind that translations do not get much longer 
 
 ### Using git
 
-If you happen to know how to use [http://git-scm.com/](git) I'd appreciate if you just prepare a commit I can pull. Alternatively, you could also send a patch file.
+If you happen to know how to use [git](http://git-scm.com/), I'd appreciate if you just prepare a commit I can pull. Alternatively, you could also send a patch file.

@@ -17,7 +17,6 @@ Have a look at the Javadoc for the class `BitcoinIntegration`.
 
 ### Sending the request
 
-`
     class de.schildbach.wallet.integration.android.BitcoinIntegration
 
     /*
@@ -32,16 +31,13 @@ Have a look at the Javadoc for the class `BitcoinIntegration`.
      */    
     static void requestForResult(Activity activity, int requestCode,
                                  String address, long amount);
-`
 
 Methods for requests without amount are also available!
 
 The above methods send an intent to any Bitcoin app which listens to it.
 
-`
     action = android.intent.action.VIEW
     data = bitcoin:1PZmMahjbfsTy6DsaRyfStzoWTPppWwDnZ?amount=0.1
-`
 
 The URL is formatted to [https://en.bitcoin.it/wiki/BIP_0021 BIP21 standard].
 
@@ -49,25 +45,20 @@ The URL is formatted to [https://en.bitcoin.it/wiki/BIP_0021 BIP21 standard].
 
 Some apps return a result through onActivityResult() after the user has gone through the sending process. In this case you can read some useful extras:
 
-`
     resultCode = OK|CANCELED
     extras[transaction_hash] = c8a9e036ecbbe75c...
-`
 
 You can use this convenience method to fetch the hash:
 
-`
     class de.schildbach.wallet.integration.android.BitcoinIntegration
 
     /**
      * Get transaction hash from result intent.
      */
     static String transactionHashFromResult(final Intent result);
-`
 
 This is an example of code for using the result:
 
-`
     protected void onActivityResult(int requestCode, int resultCode, Intent result)
     {
         if (requestCode == REQUEST_CODE && resultCode == Activity.RESULT_OK)
@@ -88,4 +79,3 @@ This is an example of code for using the result:
             // something went wrong
         }
    }
-`

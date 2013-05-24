@@ -33,10 +33,10 @@ Here is the list of (English) reference files to translate:
 All translations are renamed using the following pattern, **{lc}** being the two-letter [ISO 639-1](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code:
 
   * res/values-**{lc}**/strings.xml
-  * assets/help`_`**{lc}**.html
-  * assets/help_request_coins`_`**{lc}**.html
-  * assets/help_send_coins`_`**{lc}**.html
-  * assets/safety`_`**{lc}**.html
+  * assets/help_**{lc}**.html
+  * assets/help_request_coins_**{lc}**.html
+  * assets/help_send_coins_**{lc}**.html
+  * assets/safety_**{lc}**.html
   * web/market-description-**{lc}**.txt
   * web/market-promo-text-**{lc}**.txt
 

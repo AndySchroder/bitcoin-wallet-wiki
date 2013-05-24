@@ -39,7 +39,7 @@ The above methods send an intent to any Bitcoin app which listens to it.
     action = android.intent.action.VIEW
     data = bitcoin:1PZmMahjbfsTy6DsaRyfStzoWTPppWwDnZ?amount=0.1
 
-The URL is formatted to [https://en.bitcoin.it/wiki/BIP_0021 BIP21 standard].
+The URL is formatted to [BIP21 standard](https://en.bitcoin.it/wiki/BIP_0021).
 
 ### Retrieving the result
 

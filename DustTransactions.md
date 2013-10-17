@@ -12,4 +12,4 @@ So, as a general rule of thumb:
 
 **You should refrain from receiving payments smaller than 0.0001 BTC.** We call them _dust_.
 
-Note that these numbers will change over time, as Bitcoin value rises and falls and fee rules get adapted. Until then however, dust just uses up precious memory, making everything slower than it should be. Or, in extreme cases, causes [OutOfMemory running out of memory].
+Note that these numbers will change over time, as Bitcoin value rises and falls and fee rules get adapted. Until then however, dust just uses up precious memory, making everything slower than it should be. Or, in extreme cases, causes [running out of memory](OutOfMemory).

@@ -1,4 +1,6 @@
-#summary Instructions for translators
+# Instructions for translators
+
+Translations for all languages except English and German happen in Transifex: https://www.transifex.com/projects/p/bitcoin-wallet/
 
 ### Introduction
 
@@ -50,8 +52,3 @@ If you add the apostrophe sign, you need to escape it with a backslash like this
 In some cases, three dots are added to the end of the string (ellipse). A special unicode character is used for this; be sure to _not_ replace it with three separate dots.
 
 In "strings.xml", can you keep in mind that translations do not get much longer than their English version? Otherwise the layout might break. In all other files, length does not matter much.
-
-
-### Using git
-
-If you happen to know how to use [git](http://git-scm.com/), I'd appreciate if you just prepare a commit I can pull. Alternatively, you could also send a patch file.

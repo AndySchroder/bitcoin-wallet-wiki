@@ -24,23 +24,17 @@ If you discover references to existing software like Android system software or 
 
 Here is the list of (English) reference files to translate:
 
-  * http://code.google.com/p/bitcoin-wallet/source/browse/wallet/res/values/strings.xml
-  * http://code.google.com/p/bitcoin-wallet/source/browse/wallet/assets/help.html
-  * http://code.google.com/p/bitcoin-wallet/source/browse/wallet/assets/help_request_coins.html
-  * http://code.google.com/p/bitcoin-wallet/source/browse/wallet/assets/help_send_coins.html
-  * http://code.google.com/p/bitcoin-wallet/source/browse/wallet/assets/safety.html
-  * http://code.google.com/p/bitcoin-wallet/source/browse/market/market-description.txt
-  * http://code.google.com/p/bitcoin-wallet/source/browse/market/market-promo-text.txt
+  * https://raw.github.com/schildbach/bitcoin-wallet/master/wallet/res/values/strings.xml
+  * https://raw.github.com/schildbach/bitcoin-wallet/master/wallet/res/values/strings_help.xml
+  * https://raw.github.com/schildbach/bitcoin-wallet/master/market/market-description.txt
+  * https://raw.github.com/schildbach/bitcoin-wallet/master/market/market-promo-text.txt
 
 All translations are renamed using the following pattern, **{lc}** being the two-letter [ISO 639-1](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code:
 
-  * res/values-**{lc}**/strings.xml
-  * assets/help_**{lc}**.html
-  * assets/help_request_coins_**{lc}**.html
-  * assets/help_send_coins_**{lc}**.html
-  * assets/safety_**{lc}**.html
-  * web/market-description-**{lc}**.txt
-  * web/market-promo-text-**{lc}**.txt
+  * wallet/res/values-**{lc}**/strings.xml
+  * wallet/res/values-**{lc}**/strings_help.xml
+  * market/market-description-**{lc}**.txt
+  * market/market-promo-text-**{lc}**.txt
 
 
 ### Special considerations for strings.xml

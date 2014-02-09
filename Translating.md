@@ -12,10 +12,9 @@ I'd suggest keeping the following Bitcoin-related terms and names like they are.
 
   * Bitcoin Wallet
   * Bitcoin
-  * BTC
+  * BTC/mBTC
   * Testnet
   * Mainnet
-  * Blockchain
 
 If you discover references to existing software like Android system software or the Android Market, it would be great if you could use the same translations that have been chosen by the authors of that software.
 

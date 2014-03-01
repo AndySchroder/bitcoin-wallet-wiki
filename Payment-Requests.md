@@ -2,7 +2,7 @@ This document describes the possibilities of Bitcoin Wallet version 3.38+ to ini
 
 ### Scan-to-pay
 
-Scan-to-pay means you're being presented a QR-code by the payee and you're initiating a payment by scanning that code. You can generally scan QR codes using the embedded scanner whereever you see a photo button in the app: on the main screen, on the send coins screen or in the app widget. Although discouraged due to security concerns, you can also scan using an external scanner app.
+Scan-to-pay means you're being presented a QR-code by the payee and you're paying by scanning that code. You can generally scan QR codes using the embedded scanner whereever you see a photo button in the app: on the main screen, on the send coins screen or in the app widget. Although discouraged due to security concerns, you can also scan using an external scanner app.
 
 There is four kinds of QR-codes around:
 * Plain base58-encoded addresses. Upon scanning, a payment will be prepared to that address.

@@ -30,7 +30,7 @@ Click-to-pay means you're clicking a link on a web site, e.g. when checking out 
 
 These formats can optionally include an HTTP or HTTPS address for sending direct payments, just like with scan-to-pay.
 
-Generally click-to-pay works only if your web browser has whitelisted the "bitcoin" scheme. Fortunately on Android this generally seems to be the case.
+Click-to-pay only works if your web browser has whitelisted the "bitcoin" scheme. Fortunately on Android this generally seems to be the case.
 
 ### In-app payment
 

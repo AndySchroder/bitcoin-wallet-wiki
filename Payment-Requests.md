@@ -55,3 +55,5 @@ Here is some use-cases that are implemented (mostly as a by-product of the above
 [BIP71: MIME-types used in Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0071.mediawiki)
 
 [BIP72: Bitcoin request URI extensions for Payment Protocol](https://github.com/bitcoin/bips/blob/master/bip-0072.mediawiki)
+
+[Wikipedia on NFC](http://en.wikipedia.org/wiki/Near_field_communication)

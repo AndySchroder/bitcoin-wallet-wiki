@@ -8,7 +8,7 @@ There are four kinds of QR-codes around:
 * Plain base58-encoded addresses. Upon scanning, a payment will be prepared to that address.
 * BIP21 formatted bitcoin request URIs. In addition to the address, those can also contain the requested amount and an address label.
 * BIP72 formatted bitcoin request URIs. In addition to what BIP21 provides, they contain a link to a BIP70 payment request that can be fetched via HTTP or HTTPS. It basically adds features like an expiration date and a refund address and some security by signing the request.
-* BIP70 payment requests in base43 encoded URIs. This is an experimental format that fits a (small) payment request into a QR-code, without the need for additional HTTP requests. It is _not_ backwards compatible to BIP21/BIP72. In order to enable this format, go to the labs settings and tick "BIP70 for scan-to-pay".
+* BIP70 payment requests in base43 encoded URIs. This is an experimental format that fits a (small) payment request into a QR-code, without the need for additional HTTP requests. It is _not_ backwards compatible to BIP21/BIP72. In order to enable this format on the payee side, go to the labs settings and tick "BIP70 for scan-to-pay".
 
 All of these formats except a naked Bitcoin address can optionally include a Bluetooth address for sending direct payments in face to face situations. BIP70 also supports sending direct payments to services via HTTP or HTTPS. Direct payments make use of payment messages and payment acks as defined in BIP70.
 
@@ -18,7 +18,7 @@ Tap-to-pay means your tapping another device with your phone. Targets include a 
 
 There is three types of NDEF messages:
 * BIP21 and BIP72 formatted bitcoin request URIs are stored in an URI record and work exactly like in the scan-to-pay usecase.
-* BIP70 payment request in a mime record. This is an experimental format that transmit a full-size payment request via NFC, without the need for additional HTTP requests. In order to enable this format, go to the labs settings and tick "BIP70 for tap-to-pay".
+* BIP70 payment request in a mime record. This is an experimental format that transmit a full-size payment request via NFC, without the need for additional HTTP requests. In order to enable this format on the payee side, go to the labs settings and tick "BIP70 for tap-to-pay".
 
 All of these formats can optionally include a Bluetooth address for sending direct payments, just like with scan-to-pay.
 

@@ -32,7 +32,7 @@ These formats can optionally include an HTTP or HTTPS address for sending direct
 
 Click-to-pay only works if your web browser has whitelisted the "bitcoin" scheme. Fortunately on Android this generally seems to be the case.
 
-### In-app payment
+### In-app payments
 
 This means an app on the same device as the wallet requests a payment. It is done by throwing an Action.VIEW intent. It can contain either of
 * BIP21 and BIP72 formatted bitcoin request URI in the data field (again see scan-to-pay). You'll get a success code and optionally a transaction hash returned in the result.

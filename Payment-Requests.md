@@ -2,13 +2,13 @@ This document describes the possibilities of Bitcoin Wallet version 3.38+ to ini
 
 ### Scan-to-pay
 
-Scan-to-pay means you're being presented a QR-code by the payee and you're paying by scanning that code. You can generally scan QR codes using the embedded scanner whereever you can tap a photo button in the app: on the main screen, on the send coins screen or in the app widget. Although discouraged due to security concerns, you can also scan using an external scanner app.
+Scan-to-pay means you're being presented a QR-code by the payee and you're paying by scanning that code. You can generally scan QR-codes using the embedded scanner whereever you can tap a photo button in the app: on the main screen, on the send coins screen or in the app widget. Although discouraged due to security concerns, you can also scan using an external scanner app.
 
 There are four kinds of QR-codes around:
 * Plain base58-encoded addresses. Upon scanning, a payment will be prepared to that address.
 * BIP21 formatted bitcoin request URIs. In addition to the address, those can also contain the requested amount and an address label.
 * BIP72 formatted bitcoin request URIs. In addition to what BIP21 provides, they contain a link to a BIP70 payment request that can be fetched via HTTP or HTTPS. It basically adds features like an expiration date and a refund address and some security by signing the request.
-* BIP70 payment requests in base43 encoded URIs. This is an experimental format that fits a (small) payment request into a QR code, without the need for additional HTTP requests. It is _not_ backwards compatible to BIP21/BIP72. In order to enable this format, go to the labs settings and tick "BIP70 for scan-to-pay".
+* BIP70 payment requests in base43 encoded URIs. This is an experimental format that fits a (small) payment request into a QR-code, without the need for additional HTTP requests. It is _not_ backwards compatible to BIP21/BIP72. In order to enable this format, go to the labs settings and tick "BIP70 for scan-to-pay".
 
 All of these formats except a naked Bitcoin address can optionally include a Bluetooth address for sending direct payments in face to face situations. BIP70 also supports sending direct payments to services via HTTP or HTTPS. Direct payments make use of payment messages and payment acks as defined in BIP70.
 

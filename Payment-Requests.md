@@ -4,7 +4,7 @@ This document describes the possibilities of Bitcoin Wallet version 3.38+ to ini
 
 Scan-to-pay means you're being presented a QR-code by the payee and you're paying by scanning that code. You can generally scan QR codes using the embedded scanner whereever you can tap a photo button in the app: on the main screen, on the send coins screen or in the app widget. Although discouraged due to security concerns, you can also scan using an external scanner app.
 
-There is four kinds of QR-codes around:
+There are four kinds of QR-codes around:
 * Plain base58-encoded addresses. Upon scanning, a payment will be prepared to that address.
 * BIP21 formatted bitcoin request URIs. In addition to the address, those can also contain the requested amount and an address label.
 * BIP72 formatted bitcoin request URIs. In addition to what BIP21 provides, they contain a link to a BIP70 payment request that can be fetched via HTTP or HTTPS. It basically adds a signature and features like an expiration date and a refund address.

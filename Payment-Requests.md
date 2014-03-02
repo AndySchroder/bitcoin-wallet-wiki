@@ -14,7 +14,7 @@ All of these formats except the naked bitcoin address can optionally include a B
 
 ### Tap-to-pay
 
-Tap-to-pay means you're tapping another device with your phone. Targets include a phone or tablet owned by the payee, payment terminals or vending machines. It makes use of Near-Field Communication (NFC), specifically NFC Data Exchange Format (NDEF) messages. Those messages can also be written to a passive tag, although it for security concerns it is discouraged to use them for more than just testing.
+Tap-to-pay means you're tapping another device with your phone. Targets include a phone or tablet owned by the payee, payment terminals or vending machines. It makes use of Near-Field Communication (NFC), specifically NFC Data Exchange Format (NDEF) messages. Those messages can also be written to a passive tag, although for security concerns it is discouraged to use them for more than just testing.
 
 There is three types of NDEF messages:
 * BIP21 and BIP72 formatted bitcoin request URIs are stored in an URI record. They work exactly like in the scan-to-pay usecase.

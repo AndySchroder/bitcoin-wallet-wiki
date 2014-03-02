@@ -17,8 +17,8 @@ All of these formats except the naked bitcoin address can optionally include a B
 Tap-to-pay means you're tapping another device with your phone. Targets include a phone or tablet owned by the payee, payment terminals or vending machines. It makes use of Near-Field Communication (NFC), specifically NFC Data Exchange Format (NDEF) messages. Those messages can also be written to a passive tag, although for security concerns it is discouraged to use them for more than just testing.
 
 There is two types of NDEF messages:
-* BIP21 formatted bitcoin request URIs are stored in an URI record. They work exactly like in the scan-to-pay usecase.
-* BIP70 payment request in a mime record. This is an experimental format that transmit a full-size payment request via NFC, without the need for additional HTTP requests. In order to enable this format on the payee side, go to the labs settings and tick "BIP70 for tap-to-pay".
+* BIP21 bitcoin request URIs are stored in an URI record. They work exactly like in the scan-to-pay usecase.
+* BIP70 formatted payment request in a mime record. This is an experimental format that transmit a full-size payment request via NFC, without the need for additional HTTP requests. In order to enable this format on the payee side, go to the labs settings and tick "BIP70 for tap-to-pay".
 
 All of these formats can optionally include a Bluetooth address for sending direct payments, just like with scan-to-pay.
 
@@ -35,7 +35,7 @@ Click-to-pay only works if your web browser has whitelisted the "bitcoin" scheme
 ### In-app payments
 
 This means an app on the same device as the wallet requests a payment. It is done by throwing an Action.VIEW intent. It can contain either of
-* BIP21 and BIP72 formatted bitcoin request URI in the data field (again see scan-to-pay). You'll get a success code and optionally a transaction hash returned in the result.
+* BIP21 bitcoin request URI in the data field (again see scan-to-pay). You'll get a success code and optionally a transaction hash returned in the result.
 * BIP70 formatted payment request in the intent extra. You'll get a BIP70 formatted payment message returned in the result.
 
 There is a sub-project "integration-android" that implements helper methods for in-app payments. The exact API is described in the [[InAppPayments]] document.

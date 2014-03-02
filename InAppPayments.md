@@ -1,4 +1,8 @@
-#summary How to integrate in-app payments in your Android app.
+## How to integrate in-app payments in your Android app.
+
+*This document describes API version 1.0. API version 2.0 has just been released into
+beta, which adds the ability to use BIP70 formatted payment requests and get a payment
+message as a result. I will extend this document shortly.*
 
 ### Introduction
 

@@ -36,7 +36,7 @@ Click-to-pay only works if your web browser has whitelisted the "bitcoin" scheme
 
 This means an app on the same device as the wallet requests a payment. It is done by throwing an Action.VIEW intent. It can contain either of
 * BIP21 bitcoin request URI in the data field (again see scan-to-pay). You'll get a success code and optionally a transaction hash returned in the result. Because of the transaction malleability issue, the transaction hash must be used with care.
-* BIP70 formatted payment request in the intent extra. You'll get a BIP70 formatted payment message returned in the result.
+* BIP70 formatted payment request in the intent extra. You'll get a success code and optionally a BIP70 formatted payment message returned in the result.
 
 There is a sub-project "integration-android" that implements helper methods for in-app payments. The exact API is described in the [[InAppPayments]] document.
 

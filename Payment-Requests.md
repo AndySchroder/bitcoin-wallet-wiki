@@ -45,6 +45,7 @@ There is a sub-project "integration-android" that implements helper methods for 
 Here is some use-cases that are implemented (mostly as a by-product of the above) but are not expected to be used much:
 * Open BIP70 formatted payment request from e-mail attachment. This could be useful if a payment processor e-mails you a request and you somehow missed the first request in the click-to-pay workflow.
 * Open BIP70 formatted payment request from cloud storage, e.g. Google Drive.
+* Open BIP70 formatted payment request from a web page as a file download. You can do this, but on Android all file downloads go through the browsers download managers. This requires several taps and renders the payment process unpractical.
 
 ### Links
 

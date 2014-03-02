@@ -1,4 +1,4 @@
-This document describes the possibilities of Bitcoin Wallet version 3.38+ to initiate payments and respond to payment requests. Note the described procedures and interfaces can be implemented by any wallet app. If you have more than one wallet apps installed, a chooser dialog should appear as needed.
+This document describes the possibilities of Bitcoin Wallet version 3.38+ to initiate and respond to payment requests. Note the described procedures and interfaces can be implemented by any wallet app. If you have more than one wallet app installed, a chooser dialog should appear as needed.
 
 ### Scan-to-pay
 

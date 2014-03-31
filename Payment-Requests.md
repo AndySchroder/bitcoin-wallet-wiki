@@ -17,10 +17,10 @@ All of these formats except the naked bitcoin address can optionally include a B
 Tap-to-pay means you're tapping another device with your phone. Targets include a phone or tablet owned by the payee, payment terminals or vending machines. It makes use of Near-Field Communication (NFC), specifically NFC Data Exchange Format (NDEF) messages. Those messages can also be written to a passive tag, although for security concerns it is discouraged to use them for more than just testing.
 
 There is two types of NDEF messages:
+* BIP70 formatted payment request in a mime record. This format transmits a full-size payment request via NFC, without the need for additional HTTP requests.
 * BIP21 bitcoin request URIs are stored in an URI record. They work exactly like in the scan-to-pay usecase.
-* BIP70 formatted payment request in a mime record. This is an experimental format that transmit a full-size payment request via NFC, without the need for additional HTTP requests. In order to enable this format on the payee side, go to the labs settings and tick "BIP70 for tap-to-pay".
 
-All of these formats can optionally include a Bluetooth address for sending direct payments, just like with scan-to-pay.
+Both of these formats can optionally include a Bluetooth address for sending direct payments, just like with scan-to-pay.
 
 ### Click-to-pay
 

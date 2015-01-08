@@ -2,7 +2,7 @@ This document describes the possibilities of Bitcoin Wallet version 3.38+ to ini
 
 ### Scan-to-pay
 
-Scan-to-pay means you're being presented a QR-code by the payee and you're paying by scanning that code. You can generally scan QR-codes using the embedded scanner whereever you can tap the photo icon in the app: on the main screen, on the send coins screen or in the app widget. Although discouraged due to security concerns, you can also scan using an external scanner app such as "Barcode Scanner".
+Scan-to-pay means you're being presented a QR-code by the payee and you're paying by scanning that code. You can generally scan QR-codes using the embedded scanner wherever you can tap the photo icon in the app: on the main screen, on the send coins screen or in the app widget. Although discouraged due to security concerns, you can also scan using an external scanner app such as "Barcode Scanner".
 
 There are five kinds of QR-codes around:
 * Plain base58-encoded bitcoin addresses. Upon scanning, a payment will be prepared to that address.
@@ -11,7 +11,7 @@ There are five kinds of QR-codes around:
 * TBIP75 formatted bitcoin request URIs. In addition to what BIP21 and BIP72 provide, they also contain a hash parameter (h) and additional URI parameters (r parameters) for fetching a payment request from. The hash parameter (h) is a hash of the payment request that is provided by the URI parameters (r parameters), which serves as a trust anchor to the original bitcoin request URI. The additional URI parameters (r parameters) allow for several protocols to be offered in order to fetch the payment request, such as HTTPs and bluetooth, giving options depending on what the payer's device has available.
 * BIP70 formatted payment requests in base43 encoded URIs. This is an experimental format that fits a (moderately sized) payment request into a QR-code, without the need for additional HTTP requests. It is _not_ backwards compatible to BIP21/BIP72/TBIP75. In order to enable this format on the payee side, go to the labs settings and tick "BIP70 for scan-to-pay".
 
-All of these formats except the plain base58-encoded bitcoin address can optionally include a Bluetooth address for sending direct payments in in person situations, in the BIP70/TBIP75 payment request that is fetched. This communication is described in TBIP74 and TBIP75. BIP70/TBIP75 also support sending direct payments to services via HTTP or HTTPS. Direct payments make use of payment messages and payment acks as defined in BIP70.
+All of these formats except the plain base58-encoded bitcoin address can optionally include a Bluetooth address for sending direct payments in in person situations, in the BIP70/TBIP75 payment request that is fetched. This communication is described in TBIP74 and TBIP75. BIP70/TBIP75 also support sending direct payments to services via HTTP or HTTPS. Direct payments make use of payment messages and payment ACKs as defined in BIP70.
 
 ### Tap-to-pay
 
@@ -19,15 +19,15 @@ Tap-to-pay means you're tapping another device with your phone. Targets include 
 
 There are two types of NDEF messages:
 * BIP70 formatted payment request in a mime record. This format transmits a full-size payment request via NFC, without the need for additional HTTP or bluetooth request. As with the BIP70 formatted payment requests in base43 encoded URIs in QR codes, this format is _not_ backwards compatible to BIP21/BIP72/TBIP75.
-* BIP21/BIP72/TBIP75 formatted bitcoin request URIs stored in a URI record. They work exactly like in the scan-to-pay usecase.
+* BIP21/BIP72/TBIP75 formatted bitcoin request URIs stored in a URI record. They work exactly like in the scan-to-pay use case.
 
 All of these formats can optionally include a Bluetooth address in the BIP70/TBIP75 payment request that is fetched, for sending direct payments to, just like with scan-to-pay.
 
 ### Click-to-pay
 
 Click-to-pay means you're clicking a link on a web site, e.g. when checking out from a web based shopping cart. It can contain:
-* BIP21, BIP72 and TBIP75 formatted bitcoin request URIs that work exactly like in the scan-to-pay and tap-to-pay usecase.
-* BIP70 payment requests in base43 encoded URIs. This is an experimental format that fits a payment request into the href of a link, without the need for additional HTTP requests. It is _not_ backwards compatible to BIP21/BIP72/TBIP75.
+* BIP21, BIP72 and TBIP75 formatted bitcoin request URIs that work exactly like in the scan-to-pay and tap-to-pay use case.
+* BIP70 payment requests in base43 encoded URIs. This is an experimental format that fits a payment request into the HREF of a link, without the need for additional HTTP requests. It is _not_ backwards compatible to BIP21/BIP72/TBIP75.
 
 These formats can optionally include an HTTP, HTTPS or Bluetooth address for sending direct payments, just like with scan-to-pay and tap-to-pay, although the it's not certain whether Bluetooth addresses will ever actually be used in this case.
 
@@ -44,7 +44,7 @@ There is a sub-project "integration-android" that implements helper methods for 
 ### Various
 
 Here is some use-cases that are implemented (mostly as a by-product of the above) but are not expected to be used much:
-* Open BIP70 formatted payment request from e-mail attachment. This could be useful if a payment processor e-mails you a request and you somehow missed the first request in the click-to-pay workflow. Alternatively, an electronic invoice could be e-mailed to you from a supplier, contractor, or utility provider, which includes a payment request directly attatched to the invoice.
+* Open BIP70 formatted payment request from e-mail attachment. This could be useful if a payment processor e-mails you a request and you somehow missed the first request in the click-to-pay workflow. Alternatively, an electronic invoice could be e-mailed to you from a supplier, contractor, or utility provider, which includes a payment request directly attached to the invoice.
 * Open BIP70 formatted payment request from cloud storage, e.g. Google Drive.
 * Open BIP70 formatted payment request from a web page as a file download. You can do this, but on Android all file downloads go through the browsers download managers. This requires several taps and renders the payment process unpractical.
 
@@ -60,6 +60,6 @@ Here is some use-cases that are implemented (mostly as a by-product of the above
 
 [TBIP74: Payment Protocol Bluetooth Communication](https://github.com/AndySchroder/bips/blob/master/tbip-0074.mediawiki)
 
-[TBIP72: bitcoin: URI extensions for better Payment Protocol support and for Bluetooth Communications](https://github.com/AndySchroder/bips/blob/master/tbip-0075.mediawiki)
+[TBIP75: bitcoin: URI extensions for better Payment Protocol support and for Bluetooth Communications](https://github.com/AndySchroder/bips/blob/master/tbip-0075.mediawiki)
 
 [Wikipedia on NFC](http://en.wikipedia.org/wiki/Near_field_communication)
